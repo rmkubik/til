@@ -56,3 +56,7 @@ const mockedOriginal = Object.assign({}, original, {
   _val: 0
 });
 ```
+## sources
+https://j11y.io/snippets/fun-with-getters-setters/
+https://github.com/jquery/jquery/blob/master/src/attributes/val.js#L46
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
