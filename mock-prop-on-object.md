@@ -1,4 +1,4 @@
-# [UNFINISHED] Mocking a property using getters and setters
+# [WIP] Mocking a property using getters and setters
 ## tags
 #javascript #property #mock #test
 
