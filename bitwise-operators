@@ -5,9 +5,12 @@
 ## explanation
 
 ## examples
+tilde for array.indexOf === -1
+!! for coercing booleans? (not bitwise stuff)
 ```javascript
 // code
 ```
 
 ## sources
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+https://stackoverflow.com/questions/5915789/how-to-replace-an-item-in-an-array-with-javascript
