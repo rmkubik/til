@@ -7,9 +7,11 @@ Until recently, I thought that npm modules with a command line interface needed 
 
 ```javascript
 . . .
+
 "scripts": {
   "gulp": "gulp buildProject"
 },
+
 . . .
 ```
 
