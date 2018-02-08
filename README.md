@@ -1,2 +1,2 @@
 # Today I Learned
-A collection of gotchas and other small things that have tripped me up.
+A collection of random things I have picked up that I've recorded so I can find them again later.
