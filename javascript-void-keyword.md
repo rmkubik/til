@@ -1,4 +1,4 @@
-# [WIP] JavaScript Void Keyword
+# JavaScript Void Keyword
 ## tags
 #javascript #void #keyword
 
