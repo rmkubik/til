@@ -25,3 +25,4 @@ fs.writeFile('newFile.json', JSON.stringify(jsonFile, null, 2));
 
 ## sources
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
