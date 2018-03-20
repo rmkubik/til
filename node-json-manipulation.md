@@ -14,7 +14,7 @@ Finally, you can write your manipulated file string back into a .json file with 
 ## examples
 ```javascript
 const fs = require('fs');
-const jsonFile = require('file.json');
+const jsonFile = require('./file.json');
 
 jsonFile.newAttribute = false;
 delete jsonFile.oldAttribute;
