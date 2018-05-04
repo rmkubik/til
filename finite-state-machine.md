@@ -2,9 +2,9 @@
 #fsm #state #machine #javascript #game
 
 ## explanation
-State machines make handling complex combinations of variables more convenient. Instead of handling every possible combinations of states and actions you can only handle the particular combinations that make sense in your use case.
+State machines make handling complex combinations of variables more convenient. Instead of handling every possible combination of states and actions you can only handle the particular combinations that make sense in your use case.
 
-> TODO: QUICK EXPLANATION OF FSM and LINK TO SOURCES.
+[This document](http://people.cs.vt.edu/~kafura/ComputationalThinking/Class-Notes/FSM.pdf) explains the concept of a state machine in much more detail (and much more clearly) than this brief article will.
 
 I'm working on a game development project called [Unstable](http://unstablegame.com). This is a legacy project so I'm constantly looking for little improvements I can make without drastically reworking my build system and tooling. Implementing a state machine for some more complex objects is one of those such improvements.
 
@@ -76,3 +76,5 @@ if (this.state.currrentState === 'playing') {
 ```
 
 ## sources
+http://people.cs.vt.edu/~kafura/ComputationalThinking/Class-Notes/FSM.pdf
+
