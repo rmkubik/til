@@ -11,9 +11,9 @@ I'm working on a game development project called [Unstable](http://unstablegame.
 This finite state machine (FSM) was created for a Timer object in my game. It needed an initial paused state that could only be triggered to play once when the player first started moving. From there the pause and play states functioned as one would normally expect in a timer.
 
 ## FSM Source Code
-This is the implemented basic FSM logic. The machine keeps track of its internal current state and must be initiailized to a starting state. Additionally, the FSM provides 2 methods to manipulate its internal state. 
+This is the implemented basic FSM internal logic. The machine keeps track of its internal current state and must be initiailized to a starting state. Additionally, the FSM provides 2 methods to manipulate its internal state. 
 - `action(actionName)` will execute the current state's callback function (which is defined in the `states` object of the controller) of the provided `actionName`. 
-- `transition(stateName)` will change the current state of the FSM. This function should be used instead of manually adjusting the `currentState` property of the FSM. This allows for special state transition logic can to be added in the future.
+- `transition(stateName)` will change the current state of the FSM. This function should be used instead of manually adjusting the `currentState` property of the FSM. This provides a place for special state transition logic to be added in the future.
 ```javascript
 function fsm(states, initialState) {
     this.currentState = initialState;
@@ -35,7 +35,7 @@ function fsm(states, initialState) {
 ```
 
 ## State Constructor Object Format
-This is the example format of the `states` object passed into the FSM contructor function. Each state the machine can be in is defined as a property on the object. Each state then further has properites named the same as the actions it supports. If a state doesn't need to support a given action it doesn't need to have a corresponding action property.
+This is the example format of the `states` object passed into the FSM contructor function. Each state the machine can be in is defined as a property on the object. Each state then further has properity functions named the same as the actions it supports. If a state doesn't need to support a given action it can ignore the corresponding action property.
 ```javascript
 {
     state1: {
