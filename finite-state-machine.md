@@ -49,6 +49,7 @@ This is the example format of the `states` object passed into the FSM contructor
 ```
 
 ## FSM Implementation Example
+This FSM has three states, `playerMoved`, `paused`, and `playing`. The machine is initialized in the `playerMoved` state. In my player's move function `this.state.action('playerMoved')` is called. This allowed me to keep my timer object paused until the player moves for the first time. In the subsequent states the `playerMoved` event is ignored so no further logic is necessary. The `paused` and `playing` states alternate back and forth when `play` and `pause` events are triggered. 
 ```javascript
 this.state = fsm(
     {
