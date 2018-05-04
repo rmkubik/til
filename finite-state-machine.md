@@ -33,7 +33,9 @@ function fsm(states, initialState) {
     }
 }
 ```
+
 ## State Constructor Object Format
+This is the example format of the `states` object passed into the FSM contructor function. Each state the machine can be in is defined as a property on the object. Each state then further has properites named the same as the actions it supports. If a state doesn't need to support a given action it doesn't need to have a corresponding action property.
 ```javascript
 {
     state1: {
