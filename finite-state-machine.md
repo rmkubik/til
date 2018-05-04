@@ -75,9 +75,13 @@ this.state = fsm(
     'playerUnmoved'
 );
 
-this.state.action('pause');
+this.state.action('playerMoved'); // fsm current state from `playerUnmoved` to `paused`
 
-this.state.action('play');
+this.state.action('pause'); // fsm current state from `playing` to `paused`
+
+this.state.action('play'); // fsm current state from `paused` to `playing`
+
+this.state.action('play'); // fsm current state stays `playing`
 
 if (this.state.currrentState === 'playing') {
     // increment the timer's counter
