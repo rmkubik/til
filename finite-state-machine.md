@@ -13,6 +13,7 @@ This finite state machine (FSM) was created for a Timer object in my game. It ne
 ## FSM Source Code
 This is the implemented basic FSM internal logic. The machine keeps track of its internal current state and must be initiailized to a starting state. Additionally, the FSM provides 2 methods to manipulate its internal state. 
 - `action(actionName)` will execute the current state's callback function (which is defined in the `states` object of the controller) of the provided `actionName`. 
+
 - `transition(stateName)` will change the current state of the FSM. This function should be used instead of manually adjusting the `currentState` property of the FSM. This provides a place for special state transition logic to be added in the future.
 ```javascript
 function fsm(states, initialState) {
@@ -49,7 +50,9 @@ This is the example format of the `states` object passed into the FSM contructor
 ```
 
 ## FSM Implementation Example
-This FSM has three states, `playerMoved`, `paused`, and `playing`. The machine is initialized in the `playerMoved` state. In my player's move function `this.state.action('playerMoved')` is called. This allowed me to keep my timer object paused until the player moves for the first time. In the subsequent states the `playerMoved` event is ignored so no further logic is necessary. The `paused` and `playing` states alternate back and forth when `play` and `pause` events are triggered. 
+This FSM has three states, `playerMoved`, `paused`, and `playing`. The machine is initialized in the `playerMoved` state. In my player's move function `this.state.action('playerMoved')` is called. This allowed me to keep my timer object paused until the player moves for the first time. In the subsequent states the `playerMoved` event is ignored so no further logic is necessary. 
+
+The `paused` and `playing` states alternate back and forth when `play` and `pause` events are triggered. 
 ```javascript
 this.state = fsm(
     {
