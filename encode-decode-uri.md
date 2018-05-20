@@ -17,7 +17,7 @@ The `encode/decodeURIComponent` functions encode/decode every character except t
 
 The non-component functions have additional characters that aren't encoded/decoded:
 
-```;,/?:@&=+$#```
+```; , / ? : @ & = + $ #```
 
 ## examples
 ```javascript
@@ -28,13 +28,14 @@ const reservedCharacters = ";,/?:@&=+$#";
 const unescapedCharacters = "-_.!~*'()";
 const alphanumericAndSpaces = "ABC abc 123";
 
-encodeURI(reservedCharacters); // ;,/?:@&=+$#
-encodeURI(unescapedCharacters); // -_.!~*'()
-encodeURI(alphanumericAndSpaces); // ABC%20abc%20123 (the space gets encoded as %20)
+encodeURI(unescapedCharacters) === encodeURIComponent(unescapedCharacters);
+// -_.!~*'()                        -_.!~*'()
 
-encodeURIComponent(reservedCharacters); // %3B%2C%2F%3F%3A%40%26%3D%2B%24%23
-encodeURIComponent(unescapedCharacters); // -_.!~*'()
-encodeURIComponent(alphanumericAndSpaces); // ABC%20abc%20123 (the space gets encoded as %20)
+encodeURI(alphanumericAndSpaces) === encodeURIComponent(alphanumericAndSpaces);
+// ABC%20abc%20123                   ABC%20abc%20123 (the space gets encoded as %20)
+
+encodeURI(reservedCharacters) !== encodeURIComponent(reservedCharacters);
+// ;,/?:@&=+$#                    %3B%2C%2F%3F%3A%40%26%3D%2B%24%23
 ```
 
 ## sources
