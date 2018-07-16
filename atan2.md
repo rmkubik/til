@@ -9,10 +9,11 @@ The normal arctangent function has a couple issues though for this use case:
   - In other programming languages, dividing by zero will cause an error if the x value of the vector (when moving horizontally). In JavaScript, this division returns the `Inifinity` number which `Math.atan()` can actually handle correctly.
   - The arctangent function's domain is -π/2 to π/2 radians (-90° to 90°). This means it cannot distinguish between `{x: 1, y: 1}` and `{x: -1, y: -1}`. `Math.atan(y/x)` both evalute to 0.785 radians (45°).
 
-This is where the arctangent2 function comes in handy. `Math.atan2(y, x)` functions the same way as an `Math.atan(y/x)` function with some special exceptions. This function has a domain of -π to π radians (-180° to 180°). Revisiting the earlier example, `{x: 1, y: 1}` and `{x: -1, y: -1}` evaluate to 0.785 radians (45°) and -2.356 radians (-135°) respectively.
+This is where the arctangent2 function comes in handy. `Math.atan2(y, x)` functions the same way as the `Math.atan(y/x)` function with a special exception. This function has a domain of -π to π radians (-180° to 180°). Revisiting the earlier example, `{x: 1, y: 1}` and `{x: -1, y: -1}` evaluate to 0.785 radians (45°) and -2.356 radians (-135°) respectively. This allows you to correctly orient an object to any velocity vector in a circle.
 
 ## examples
 ```javascript
+// Returns an angle in degrees representing the facing of an object with the given velocity
 function convertVelocityToAngle(velocity) {
   const { x, y } = velocity;
  
