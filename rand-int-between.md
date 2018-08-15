@@ -21,7 +21,7 @@ function intBetweenExclusive(low, high) {
 }
 
 // range: [low, high]
-function intBetweenInvclusive(low, high) {
+function intBetweenInclusive(low, high) {
   return Math.floor(Math.random() * (high - low + 1)) + low;
 }
 ```
