@@ -1,8 +1,9 @@
-# Title
+# Parse JSON with JQ
 ## tags
-#tag
+#json #bash #jq
 
 ## explanation
+`jq` is a bash program that assists with the parsing of JSON formatted data. This example shows how to log the start script of an npm package to the terminal.
 
 ## examples
 ```bash
@@ -45,3 +46,4 @@ cat package.json | jq .scripts.start
 ```
 
 ## sources
+https://stedolan.github.io/jq/manual/
