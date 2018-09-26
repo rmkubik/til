@@ -19,8 +19,9 @@ cat package.json
     "lodash": "4.17.10"
   }
 }
+```
 
-
+```bash
 # If you pipe data into `jq` it will pretty print it with syntax highlighting
 cat package.json | jq
 {
@@ -33,7 +34,9 @@ cat package.json | jq
     "lodash": "4.17.10"
   }
 }
+```
 
+```bash
 # Finally jq lets you parse the JSON via dot notation
 cat package.json | jq .scripts
 {
