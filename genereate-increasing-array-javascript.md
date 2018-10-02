@@ -40,3 +40,6 @@ generateArrayFromInclusive(5, 8);
 ```
 
 ## sources
+https://www.jstips.co/en/javascript/create-range-0...n-easily-using-one-line/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+
