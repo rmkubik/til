@@ -13,6 +13,8 @@ You can resolve this by adding an extra row/column of pixels around the edges of
 
 [Tile Extruder](https://github.com/sporadic-labs/tile-extruder) is a node library that gives you a CLI interface to add that extra one pixel border around tilesets. This library was specifically designed around Phaser and Tiled and has specific instructions in its readme for integrating those two. 
 
+The margin on your new tileset will be increased by 1 pixel, and the spacing will be increased by 2 pixels when compared to the original.
+
 ## examples
 ```bash
 npm i tile-extruder --save-dev
