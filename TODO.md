@@ -9,3 +9,4 @@ Things to be written up that haven't been gotten around to yet
 1. How to read AST-TYPES
 1. How to do a basic code mod
 1. Basic jscodeshift api
+1. Exclude files passed into jscodeshift using find and pipe
