@@ -6,3 +6,6 @@ Things to be written up that haven't been gotten around to yet
 1. Search count in AG: https://stackoverflow.com/questions/31995820/count-total-number-of-matches-in-directory-with-ag/35297674 && https://github.com/ggreer/the_silver_searcher/issues/505#issuecomment-63157670
 1. Using Set
 1. Building a Queue
+1. How to read AST-TYPES
+1. How to do a basic code mod
+1. Basic jscodeshift api
