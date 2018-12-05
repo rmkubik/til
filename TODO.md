@@ -1,7 +1,7 @@
 # TODO
 Things to be written up that haven't been gotten around to yet
 
-1. Using ESLint rules to distribute team tribal knowledge: https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0
+1. Using ESLint rules to distribute team tribal knowledge: https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0 & https://eslint.org/docs/developer-guide/working-with-rules (access to node and context object)
 1. ~Using a return in a class constructor~
 1. Search count in AG: https://stackoverflow.com/questions/31995820/count-total-number-of-matches-in-directory-with-ag/35297674 && https://github.com/ggreer/the_silver_searcher/issues/505#issuecomment-63157670
 1. Using Set
