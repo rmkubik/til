@@ -15,3 +15,4 @@ Things to be written up that haven't been gotten around to yet
 1. Install npm module from a local path: https://stackoverflow.com/questions/8088795/installing-a-local-module-using-npm
 1. git fetch --all to update all branches, not just checked out one: https://stackoverflow.com/questions/20581914/files-not-updating-using-git-pull
 1. Pipe ag into fzf to ignore directories like node_modules: https://github.com/junegunn/fzf/issues/383#issuecomment-266884262
+1. Sinon stub yields function: https://stackoverflow.com/questions/16003218/understanding-sinon-jss-yield-yields-and-callsarg
