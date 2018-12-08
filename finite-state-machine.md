@@ -1,4 +1,6 @@
 # Basic JavaScript Finite State Machine
+
+## tags
 #fsm #state #machine #javascript #game
 
 ## explanation
